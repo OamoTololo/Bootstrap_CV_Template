@@ -47,10 +47,11 @@ html, body {
     font-size: 500%;
     text-transform: uppercase;
     text-shadow: 1px 1px 15px black;
-    color: teal;
+    text-align: center;
+    color: aqua;
 }
 .carousel-caption h3 {
-    color: teal;
+    color: aqua;
     font-size: 200%;
     font-weight: 500;
     text-shadow: 1px 1px 10px black;
@@ -81,9 +82,103 @@ html, body {
 }
 .btn-outline-light {
     border: 1px solid #f44336;
-    background: #f44336;
+    background: transparent;
     transition: 1s;
+    color: aqua;
 }
+.padding {
+    padding-bottom: 2rem;
+}
+
+.welcome {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.welcome hr {
+    border-top: 2px solid dimgrey;
+    width: 95%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+
+.fa-git-alt {
+    color: orangered;
+}
+.fa-bootstrap {
+    color: rebeccapurple;
+}
+.fa-php {
+    color: blue;
+}
+.fa-git-alt, .fa-bootstrap, .fa-php {
+    font-size: 4em;
+    margin:  1rem;
+}
+.col-lg-6 {
+    padding-top:  2rem;
+}
+.col-lg-6 img {
+    width: 100%;
+    height: 100%;
+    border: 50px solid dimgrey;
+}
+.col-lg-6 p, h1 {
+    text-align: center;
+}
+.card {
+    width: 100%;
+    height: 100%;
+}
+.card-img-top{
+    width: 20%;
+    height: 100%;
+}
+.social a {
+    font-size: 4.5em;
+    padding: 3rem;
+}
+.fa-facebook {
+    color: #3b5998;
+}
+.fa-twitter {
+    color: #00aced;
+}
+fa-envelope-open {
+
+}
+.fa-instagram {
+    color: #517fa8;
+}
+.fa-github {
+    color: black;
+}
+.fa-facebook:hover,
+.fa-github:hover,
+.fa-twitter:hover,
+.fa-envelope-open,
+.fa-instagram:hover,
+.fa-linkedin:hover{
+    color: #d5d5d5;
+}
+footer {
+    background-color: #3f3f3f;
+    color: white;
+    padding-top: 2rem;
+}
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+.col-12 h5 {
+    padding-top: 1.5rem;
+}
+.col-md-4 {
+    padding-top: 1.5rem;
+}
+/*-
 /*--  --*/
 
 /*--  --*/
@@ -97,13 +192,69 @@ html, body {
 
 /*-- Media Queries --*/
 @media  (max-width: 992px) {
-
+    .social a {
+        font-size: 4em;
+        padding: 2rem;
+    }
 }
 @media  (max-width: 768px) {
-
+    .carousel-inner img {
+        height: 100%;
+        width: 100%;
+    }
+    .carousel-caption {
+        top: 45%;
+    }
+    .carousel-caption h1 {
+        font-size: 350%;
+    }
+    .carousel-caption h3 {
+        color: aqua;
+        font-size: 140%;
+        font-weight: 400;
+        padding-bottom: .2rem;
+    }
+    .carousel-caption .btn {
+        font-size: 95%;
+        padding: 8px 14px;
+    }
+    .display-4 {
+        font-size: 200%;
+    }
+    .social a {
+        font-size: 2.5em;
+        padding: 1.2rem;
+    }
 }
 @media  (max-width: 576px) {
-
+    .carousel-inner img {
+        height: 100%;
+        width: 100%;
+    }
+    .carousel-caption {
+        top: 40%;
+    }
+    .carousel-caption h1 {
+        font-size: 250%;
+    }
+    .carousel-caption h3 {
+        color: aqua;
+        font-size: 110%;
+    }
+    .carousel-caption .btn {
+        font-size: 90%;
+        padding: 4px 8px;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .display-4 {
+        font-size: 160%;
+    }
+    .social a {
+        font-size: 2em;
+        padding: 1.7rem;
+    }
 }
 /*-- End of Media Queries --*/
 
